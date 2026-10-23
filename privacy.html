@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How ACE-PC Backup accesses Google Drive, stores credentials locally and handles backup files.">
+  <title>Privacy policy — ACE-PC Backup</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><a class="brand" href="./">ACE-PC Backup</a><nav aria-label="Main navigation"><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav></header>
+  <main id="main" class="document">
+    <h1>Privacy policy</h1>
+    <p class="updated">Effective 24 October 2026</p>
+    <p class="lead">ACE-PC Backup is a personal backup application operated by the owner of the PC. It copies selected local folders to that owner's Google Drive.</p>
+    <section><h2>Information the application accesses</h2>
+      <p>The local backup process reads files in the folders selected by the owner, including their names, contents, sizes and modification times. The process uploads those files to Google Drive.</p>
+      <p>The application requests <code>https://www.googleapis.com/auth/drive.file</code>. This permission lets it create files and access files created by, opened with or specifically shared with the application. It does not request unrestricted access to every file in the account.</p>
+      <p>To perform the backup, the application reads the IDs, names, parent folders, sizes, modification times and checksums of Drive files available to it. Setup may also check available Drive storage. Google issues access and refresh tokens after the owner grants permission.</p>
+    </section>
+    <section><h2>How the information is used</h2>
+      <p>Files and metadata are used to create and maintain the owner's backup, identify files that need uploading, verify transfers and report errors. The application does not use Google user data for advertising, profiling, sale or training AI models.</p>
+      <p>Google Drive changes are not applied to the PC's source files. A later backup may upload the PC copy again when a Drive copy has changed or been deleted.</p>
+    </section>
+    <section><h2>Storage and access</h2>
+      <p>Backup files are stored in the owner's Google Drive. OAuth credentials, refresh tokens, configuration and operational logs are stored locally in the owner's Windows profile. Logs may contain file paths, transfer results and error details. The application does not store the Google account password.</p>
+      <p>No separate developer-operated backup server receives the files or tokens. The PC owner can inspect their local files, logs and Drive backups. Access by other people depends on permissions the owner independently grants in Windows or Google Drive.</p>
+    </section>
+    <section><h2>Data sharing and Google API policy</h2>
+      <p>File contents and necessary metadata are transmitted to Google to provide Google Drive storage. Google processes them under its own terms and <a href="https://policies.google.com/privacy">privacy policy</a>. The backup process does not send them to GitHub or this public website.</p>
+      <p>ACE-PC Backup follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+    </section>
+    <section><h2>Retention and deletion</h2>
+      <p>Uploaded files remain in Drive until the owner removes them. Deleting a local file does not automatically delete its backup. Updating a file may replace its current Drive version, subject to Google Drive's version history and retention behavior; this application does not provide a separate permanent snapshot archive.</p>
+      <p>The owner can disable the scheduled task to stop future uploads, remove backup files in Drive and remove local application configuration and logs. Google Drive trash and version retention are managed by Google.</p>
+    </section>
+    <section><h2>Revoking access</h2>
+      <p>The owner can remove ACE-PC Backup from their <a href="https://myaccount.google.com/connections">Google account's third-party connections</a>. Revocation prevents continued authorized access. It does not itself delete local source files or existing Drive backups. Authorization must be granted again before future backups can run.</p>
+    </section>
+    <section><h2>This website</h2>
+      <p>This is a static information website hosted on GitHub Pages. It contains no login form, file upload, analytics script or application cookies. GitHub serves web requests under its own <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>.</p>
+    </section>
+    <section><h2>Contact and changes</h2>
+      <p>For questions or deletion requests, contact the application owner using the support email displayed in the Google authorization screen or your existing contact channel with the owner. Changes to this policy will be published here with an updated effective date.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><a href="./">ACE-PC Backup</a><nav aria-label="Legal navigation"><a href="privacy.html" aria-current="page">Privacy policy</a><a href="terms.html">Terms of use</a></nav></footer>
+</body>
+</html>

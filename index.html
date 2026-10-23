@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ACE-PC Backup is a personal Windows backup application that copies selected local folders to the owner's Google Drive.">
+  <title>ACE-PC Backup</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="./" aria-current="page">ACE-PC Backup</a>
+    <nav aria-label="Main navigation"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+  </header>
+  <main id="main" class="home">
+    <h1>Your PC stays<br>in control.</h1>
+    <p class="lead">ACE-PC Backup copies selected folders from the owner's Windows PC to a separate folder in their Google Drive.</p>
+    <div class="transfer" role="img" aria-label="One-way backup: selected PC folders upload to ACE-PC in Google Drive. There is no reverse download to the source folders.">
+      <div><strong>Windows PC</strong><span>Selected local folders</span></div>
+      <svg viewBox="0 0 80 24" width="80" height="24" aria-hidden="true"><path d="M2 12H76M66 3l10 9-10 9" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      <div><strong>Google Drive</strong><span>Separate ACE-PC folder</span></div>
+    </div>
+    <section aria-labelledby="how-it-works">
+      <h2 id="how-it-works">One-way backup</h2>
+      <p>The local application uses rclone to upload new or changed files. Google Drive edits and deletions are never downloaded into the PC's source folders. Files deleted from the PC are retained in Drive until the owner removes them.</p>
+      <p>The owner signs in to their Google account and grants permission before the backup can run. Scheduled uploads require the PC to be on, the Windows user to be signed in, and an internet connection.</p>
+    </section>
+    <section aria-labelledby="access">
+      <h2 id="access">Access for the backup</h2>
+      <p>ACE-PC Backup requests the Google Drive <code>drive.file</code> permission. It uses this access to create its backup folder, upload files, read file metadata and update files available to the application.</p>
+      <p>This is a personal application operated by the PC owner. It has no public registration, hosted backup server or shared access to other people's backups. This website provides information only and does not sign you in or accept file uploads.</p>
+      <a class="text-link" href="privacy.html">Read the privacy policy</a>
+    </section>
+    <section aria-labelledby="support">
+      <h2 id="support">Support</h2>
+      <p>Support is provided directly by the application owner. Use the support email displayed in the Google authorization screen or the contact channel used to arrange this personal backup.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><span>ACE-PC Backup</span><nav aria-label="Legal navigation"><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a></nav></footer>
+</body>
+</html>
