@@ -23,7 +23,7 @@
     </div>
     <section aria-labelledby="how-it-works">
       <h2 id="how-it-works">One-way backup</h2>
-      <p>The local application uses rclone to upload new or changed files. Google Drive edits and deletions are never downloaded into the PC's source folders. Files deleted from the PC are retained in Drive until the owner removes them.</p>
+      <p>The local application uses rclone to mirror selected PC folders to Drive. New files, edits, renames, moves and local deletions are reflected in the backup on a later scheduled run. Deleted backup files are sent to Google Drive Trash. Google Drive changes are never downloaded into the PC's source folders.</p>
       <p>The owner signs in to their Google account and grants permission before the backup can run. Scheduled uploads require the PC to be on, the Windows user to be signed in, and an internet connection.</p>
     </section>
     <section aria-labelledby="access">
